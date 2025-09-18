@@ -1,0 +1,25 @@
+# 🧭 Zero-Shot Text Classifier (Streamlit + BART-MNLI)
+
+Clasificador de tópicos **Zero-Shot** usando **Inferencia de Lenguaje Natural (NLI)** con el modelo
+`facebook/bart-large-mnli`. No requiere reentrenamiento: ingresa un texto y etiquetas nuevas, y el
+modelo estima la afinidad de cada etiqueta con el texto.
+
+## 🚀 Cómo ejecutar localmente
+
+```bash
+# 1) Clonar el repo
+git clone https://github.com/tu-usuario/zero-shot-classifier.git
+cd zero-shot-classifier
+
+# 2) Crear y activar entorno (opcional, recomendado)
+python -m venv .venv
+# Windows
+.venv\Scripts\activate
+# macOS/Linux
+source .venv/bin/activate
+
+# 3) Instalar dependencias
+pip install -r requirements.txt
+
+# 4) Ejecutar Streamlit
+streamlit run app.py
